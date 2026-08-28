@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yaseen Muhammed — Software Designer &amp; Developer</title>
+<meta name="description" content="Portfolio of Yaseen Muhammed, software designer, developer and technology enthusiast.">
+
+<!-- Favicon: simple inline monogram, no external asset needed -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0d'/%3E%3Cpath d='M8 8h10l14 20 14-20h10L34 34v22H24V34z' fill='%23e8102b'/%3E%3C/svg%3E">
+
+<!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (telemetry/data) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================= -->
+<!-- BACKGROUND FX (grid + noise)  -->
+<!-- ============================= -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="bg-fx__grid"></div>
+  <div class="bg-fx__vignette"></div>
+</div>
+
+<!-- ============================= -->
+<!-- NAVIGATION                    -->
+<!-- ============================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="navbar__brand" aria-label="Yaseen Muhammed — home">
+      <span class="navbar__badge">YM</span>
+      <span class="navbar__wordmark">YASEEN.M</span>
+    </a>
+
+    <nav class="navbar__nav" id="primary-nav" aria-label="Primary">
+      <ul class="navbar__list">
+        <li><a href="#home" class="navbar__link is-active" data-nav-link>Home</a></li>
+        <li><a href="#about" class="navbar__link" data-nav-link>About</a></li>
+        <li><a href="#skills" class="navbar__link" data-nav-link>Skills</a></li>
+        <li><a href="#projects" class="navbar__link" data-nav-link>Projects</a></li>
+        <li><a href="#experience" class="navbar__link" data-nav-link>Experience</a></li>
+        <li><a href="#contact" class="navbar__link" data-nav-link>Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn btn--sm btn--outline navbar__cta">Let's Talk</a>
+
+    <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-menu__list">
+    <li><a href="#home" data-nav-link data-mobile-link><span>01</span>Home</a></li>
+    <li><a href="#about" data-nav-link data-mobile-link><span>02</span>About</a></li>
+    <li><a href="#skills" data-nav-link data-mobile-link><span>03</span>Skills</a></li>
+    <li><a href="#projects" data-nav-link data-mobile-link><span>04</span>Projects</a></li>
+    <li><a href="#experience" data-nav-link data-mobile-link><span>05</span>Experience</a></li>
+    <li><a href="#contact" data-nav-link data-mobile-link><span>06</span>Contact</a></li>
+  </ul>
+  <div class="mobile-menu__footer">
+    <span class="mono-tag">SYSTEM STATUS // ONLINE</span>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============================= -->
+  <!-- HERO                          -->
+  <!-- ============================= -->
+  <section class="hero" id="home">
+
+    <div class="hero__lines" aria-hidden="true">
+      <svg class="hero__svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+        <path id="track1" class="hero__path hero__path--red" d="M -50 620 C 150 560, 260 460, 340 480 C 440 505, 430 610, 540 600 C 650 590, 660 470, 780 440 C 900 410, 980 320, 1120 300" />
+        <path id="track2" class="hero__path hero__path--silver" d="M -50 260 C 120 300, 220 250, 320 270 C 460 300, 500 210, 640 220 C 780 230, 820 340, 960 330 C 1060 323, 1120 260, 1260 280" />
+        <path class="hero__path hero__path--dim" d="M -50 720 C 200 700, 300 660, 460 680 C 640 703, 700 640, 860 650 C 1000 658, 1080 600, 1260 610" />
+        <circle class="hero__dot" r="4.5" />
+      </svg>
+    </div>
+
+    <div class="hero__inner">
+      <p class="status-chip">
+        <span class="status-chip__dot"></span>
+        SYSTEM STATUS <span class="status-chip__sep">//</span> ONLINE
+      </p>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line">YASEEN</span>
+        <span class="hero__title-line hero__title-line--accent">MUHAMMED</span>
+      </h1>
+
+      <p class="hero__subtitle">Software Designer &amp; Technology Enthusiast</p>
+
+      <p class="hero__intro">I design and build digital experiences, software projects, and technology solutions inspired by curiosity, creativity, and speed.</p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#about" class="btn btn--outline">About Me</a>
+      </div>
+    </div>
+
+    <div class="hero__corner hero__corner--tl" aria-hidden="true"></div>
+    <div class="hero__corner hero__corner--br" aria-hidden="true"></div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span>SCROLL</span>
+      <i></i>
+    </a>
+  </section>
+
+  <!-- Telemetry marquee strip -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>BUILD MODE // ACTIVE</span><span>·</span>
+      <span>FOCUS // SOFTWARE &amp; DESIGN</span><span>·</span>
+      <span>STATUS // LEARNING CONTINUOUSLY</span><span>·</span>
+      <span>INTEREST // AI / ROBOTICS / ELECTRONICS</span><span>·</span>
+      <span>BUILD MODE // ACTIVE</span><span>·</span>
+      <span>FOCUS // SOFTWARE &amp; DESIGN</span><span>·</span>
+      <span>STATUS // LEARNING CONTINUOUSLY</span><span>·</span>
+      <span>INTEREST // AI / ROBOTICS / ELECTRONICS</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ============================= -->
+  <!-- ABOUT                         -->
+  <!-- ============================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="eyebrow reveal">LAP 01 <span>//</span> ABOUT</p>
+      <h2 class="section-title reveal">About the Driver</h2>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-visual__frame panel-cut">
+            <div class="about-visual__glow" aria-hidden="true"></div>
+            <div class="about-visual__grid" aria-hidden="true"></div>
+            <span class="about-visual__monogram">YM</span>
+          </div>
+          <div class="about-visual__plate mono-tag">CAR <span>N°</span> 01</div>
+        </div>
+
+        <div class="about-content">
+          <div class="driver-card panel-cut reveal">
+            <div class="driver-card__row"><span>DRIVER</span><strong>Yaseen Muhammed</strong></div>
+            <div class="driver-card__row"><span>ROLE</span><strong>Software Designer</strong></div>
+            <div class="driver-card__row"><span>FOCUS</span><strong>Technology &amp; Innovation</strong></div>
+            <div class="driver-card__row"><span>MINDSET</span><strong>Build. Learn. Improve.</strong></div>
+          </div>
+
+          <p class="about-text reveal">Yaseen is a software designer and developer with a growing focus on building useful, well-crafted digital products. His interests span UI/UX design, front-end and back-end programming, electronics, robotics, and artificial intelligence — treating every new language, tool, or circuit as another system worth understanding.</p>
+
+          <p class="about-text reveal">What draws him to technology is the same thing that draws him to racing: the discipline of small, constant improvement. Every project — whether it's a web interface, a robotic prototype, or a line of code refactored for the tenth time — is another lap toward getting it right.</p>
+
+          <div class="mission-card panel-cut reveal">
+            <span class="mission-card__label">MISSION</span>
+            <p>Build useful technology, learn continuously, and turn ideas into real projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- SKILLS / TELEMETRY            -->
+  <!-- ============================= -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="eyebrow reveal">LAP 02 <span>//</span> SKILLS</p>
+      <h2 class="section-title reveal">Technical Telemetry</h2>
+      <p class="section-lede reveal">A live readout of the tools, languages, and technologies Yaseen builds with — presented as skills and interests, not claims of mastery.</p>
+
+      <div class="telemetry-grid">
+
+        <div class="telemetry-card panel-cut reveal">
+          <div class="telemetry-card__head">
+            <h3>Software</h3>
+            <span class="mono-tag">CH. 01</span>
+          </div>
+
+          <div class="skill-row" data-percent="88">
+            <div class="skill-row__head"><span>Python</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="85">
+            <div class="skill-row__head"><span>JavaScript</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="92">
+            <div class="skill-row__head"><span>HTML</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="90">
+            <div class="skill-row__head"><span>CSS</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="70">
+            <div class="skill-row__head"><span>React</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="80">
+            <div class="skill-row__head"><span>Git</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+        </div>
+
+        <div class="telemetry-card panel-cut reveal">
+          <div class="telemetry-card__head">
+            <h3>Design</h3>
+            <span class="mono-tag">CH. 02</span>
+          </div>
+
+          <div class="skill-row" data-percent="85">
+            <div class="skill-row__head"><span>UI/UX Design</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="88">
+            <div class="skill-row__head"><span>Web Design</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="82">
+            <div class="skill-row__head"><span>Interface Design</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="78">
+            <div class="skill-row__head"><span>Prototyping</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+        </div>
+
+        <div class="telemetry-card panel-cut reveal">
+          <div class="telemetry-card__head">
+            <h3>Technology</h3>
+            <span class="mono-tag">CH. 03</span>
+          </div>
+
+          <div class="skill-row" data-percent="75">
+            <div class="skill-row__head"><span>Arduino</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="70">
+            <div class="skill-row__head"><span>Raspberry Pi</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="68">
+            <div class="skill-row__head"><span>Electronics</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="72">
+            <div class="skill-row__head"><span>Robotics</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+          <div class="skill-row" data-percent="60">
+            <div class="skill-row__head"><span>AI / Machine Learning</span><span class="skill-row__value"><span class="count">0</span>%</span></div>
+            <div class="skill-row__track"><div class="skill-row__fill"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- PROJECTS                      -->
+  <!-- ============================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="eyebrow reveal">LAP 03 <span>//</span> PROJECTS</p>
+      <h2 class="section-title reveal">Race Engineering <span>//</span> Projects</h2>
+      <p class="section-lede reveal">A selection of builds across software, robotics, and electronics. Replace freely with real projects, links, and images.</p>
+
+      <div class="project-grid">
+
+        <!-- Project card 1 -->
+        <article class="project-card panel-cut reveal">
+          <div class="project-card__line" aria-hidden="true"></div>
+          <div class="project-card__top">
+            <span class="tag tag--ai">AI / SOFTWARE</span>
+            <span class="status-pill status-pill--progress">IN PROGRESS</span>
+          </div>
+          <h3 class="project-card__title">Nova</h3>
+          <p class="project-card__desc">A lightweight conversational assistant exploring natural language handling, task automation, and simple context memory.</p>
+          <p class="project-card__more">Built as a sandbox for learning how assistants plan multi-step tasks and hold short-term context between turns.</p>
+          <ul class="project-card__tech">
+            <li>Python</li><li>OpenAI API</li><li>Flask</li>
+          </ul>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--sm btn--outline">View Project</a>
+            <a href="#" class="icon-btn" aria-label="View Nova on GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project card 2 -->
+        <article class="project-card panel-cut reveal">
+          <div class="project-card__line" aria-hidden="true"></div>
+          <div class="project-card__top">
+            <span class="tag tag--robotics">ROBOTICS</span>
+            <span class="status-pill status-pill--done">COMPLETED</span>
+          </div>
+          <h3 class="project-card__title">RoboArm X1</h3>
+          <p class="project-card__desc">A servo-driven robotic arm built to explore inverse kinematics, motion control, and hands-on embedded programming.</p>
+          <p class="project-card__more">Four degrees of freedom, controlled via a custom serial interface with adjustable speed and grip presets.</p>
+          <ul class="project-card__tech">
+            <li>Arduino</li><li>C++</li><li>Servo Control</li>
+          </ul>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--sm btn--outline">View Project</a>
+            <a href="#" class="icon-btn" aria-label="View RoboArm X1 on GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project card 3 -->
+        <article class="project-card panel-cut reveal">
+          <div class="project-card__line" aria-hidden="true"></div>
+          <div class="project-card__top">
+            <span class="tag tag--web">WEB DEVELOPMENT</span>
+            <span class="status-pill status-pill--done">COMPLETED</span>
+          </div>
+          <h3 class="project-card__title">Apex Dashboard</h3>
+          <p class="project-card__desc">A personal analytics dashboard for tracking coding activity and project progress, built with custom charts and a dark UI.</p>
+          <p class="project-card__more">Tracks commits, hours, and active projects in a single glanceable view, inspired by race-engineer telemetry screens.</p>
+          <ul class="project-card__tech">
+            <li>JavaScript</li><li>Chart.js</li><li>CSS</li>
+          </ul>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--sm btn--outline">View Project</a>
+            <a href="#" class="icon-btn" aria-label="View Apex Dashboard on GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project card 4 -->
+        <article class="project-card panel-cut reveal">
+          <div class="project-card__line" aria-hidden="true"></div>
+          <div class="project-card__top">
+            <span class="tag tag--electronics">ELECTRONICS</span>
+            <span class="status-pill status-pill--concept">CONCEPT</span>
+          </div>
+          <h3 class="project-card__title">PitLane Access</h3>
+          <p class="project-card__desc">An RFID-based access control prototype combining a Raspberry Pi, sensor input, and a simple Python-driven interface.</p>
+          <p class="project-card__more">Early-stage build exploring secure entry logging with a local dashboard for access history.</p>
+          <ul class="project-card__tech">
+            <li>Raspberry Pi</li><li>RFID</li><li>Python</li>
+          </ul>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--sm btn--outline">View Project</a>
+            <a href="#" class="icon-btn" aria-label="View PitLane Access on GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- FEATURED PROJECT              -->
+  <!-- ============================= -->
+  <section class="section featured" id="featured">
+    <div class="container">
+      <div class="featured__panel panel-cut reveal">
+        <div class="featured__media" aria-hidden="true">
+          <div class="featured__media-grid"></div>
+          <span class="featured__media-label mono-tag">CASE FILE // 001</span>
+        </div>
+
+        <div class="featured__content">
+          <span class="eyebrow eyebrow--light">FEATURED PROJECT</span>
+          <h3 class="featured__title">GRID</h3>
+          <p class="featured__subtitle">F1 Race Data Visualizer</p>
+
+          <dl class="featured__specs">
+            <div><dt>CATEGORY</dt><dd>// SOFTWARE</dd></div>
+            <div><dt>TECH STACK</dt><dd>// JAVASCRIPT / CHART.JS / PUBLIC F1 APIS</dd></div>
+            <div><dt>STATUS</dt><dd>// IN PROGRESS</dd></div>
+          </dl>
+
+          <p class="featured__desc">A personal web app that pulls public race-session data and visualizes lap times, sector splits, and pace comparisons inside a clean, telemetry-inspired dashboard — a project built at the intersection of the two things Yaseen cares about most: software and racing.</p>
+
+          <a href="#" class="btn btn--primary">View Case Study →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- EXPERIENCE / JOURNEY          -->
+  <!-- ============================= -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <p class="eyebrow reveal">LAP 04 <span>//</span> EXPERIENCE</p>
+      <h2 class="section-title reveal">The Journey</h2>
+      <p class="section-lede reveal">A race-weekend view of how Yaseen's skills have progressed — editable milestones for school projects, builds, and goals still ahead.</p>
+
+      <div class="timeline">
+        <div class="timeline__line" aria-hidden="true"></div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__stage mono-tag">START</span>
+          <h3>First Lines of Code</h3>
+          <p>Began exploring programming through small scripts and web experiments, curious how software actually works under the hood.</p>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__stage mono-tag">LEARN</span>
+          <h3>Building the Fundamentals</h3>
+          <p>Studied core programming, electronics, and design principles — from Python scripts to first circuits on a breadboard.</p>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__stage mono-tag">BUILD</span>
+          <h3>First Real Projects</h3>
+          <p>Started building working tools and prototypes — web interfaces, Arduino-based devices, and small automation scripts.</p>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__stage mono-tag">TEST</span>
+          <h3>Robotics &amp; Experiments</h3>
+          <p>Took on robotics and embedded projects, testing ideas on ESP32 and Raspberry Pi hardware, learning through iteration.</p>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__stage mono-tag">IMPROVE</span>
+          <h3>Refining the Craft</h3>
+          <p>Focused on UI/UX design and cleaner code — turning working prototypes into polished, well-considered products.</p>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__stage mono-tag">NEXT</span>
+          <h3>What's Coming Up</h3>
+          <p>Exploring deeper AI/ML integration, more advanced robotics, and larger full-stack builds — the next lap is already loading.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- STATS                         -->
+  <!-- ============================= -->
+  <section class="section stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat panel-cut reveal" data-value="10" data-suffix="+">
+          <span class="stat__number">0</span>
+          <span class="stat__label">Projects Built</span>
+        </div>
+        <div class="stat panel-cut reveal" data-value="15" data-suffix="+">
+          <span class="stat__number">0</span>
+          <span class="stat__label">Technologies</span>
+        </div>
+        <div class="stat panel-cut reveal" data-infinite="true">
+          <span class="stat__number">0</span>
+          <span class="stat__label">Lines of Code</span>
+        </div>
+        <div class="stat panel-cut reveal" data-value="100" data-suffix="%">
+          <span class="stat__number">0</span>
+          <span class="stat__label">Curiosity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- BEYOND THE CODE (F1 FAN)      -->
+  <!-- ============================= -->
+  <section class="section beyond">
+    <div class="container">
+      <p class="eyebrow reveal">OFF TRACK <span>//</span> A NOTE</p>
+      <h2 class="section-title reveal">Beyond the Code</h2>
+      <p class="beyond__quote reveal">"When I'm not designing software, you'll probably find me following Formula 1."</p>
+
+      <div class="beyond-grid">
+        <div class="beyond-card panel-cut reveal">
+          <span class="beyond-card__from">SPEED</span>
+          <span class="beyond-card__arrow" aria-hidden="true">→</span>
+          <span class="beyond-card__to">Performance</span>
+        </div>
+        <div class="beyond-card panel-cut reveal">
+          <span class="beyond-card__from">STRATEGY</span>
+          <span class="beyond-card__arrow" aria-hidden="true">→</span>
+          <span class="beyond-card__to">Problem Solving</span>
+        </div>
+        <div class="beyond-card panel-cut reveal">
+          <span class="beyond-card__from">ENGINEERING</span>
+          <span class="beyond-card__arrow" aria-hidden="true">→</span>
+          <span class="beyond-card__to">Building</span>
+        </div>
+        <div class="beyond-card panel-cut reveal">
+          <span class="beyond-card__from">DATA</span>
+          <span class="beyond-card__arrow" aria-hidden="true">→</span>
+          <span class="beyond-card__to">Decisions</span>
+        </div>
+        <div class="beyond-card panel-cut reveal">
+          <span class="beyond-card__from">PRECISION</span>
+          <span class="beyond-card__arrow" aria-hidden="true">→</span>
+          <span class="beyond-card__to">Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- CONTACT                       -->
+  <!-- ============================= -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <p class="eyebrow reveal">FINAL LAP <span>//</span> CONTACT</p>
+      <h2 class="section-title reveal">Pit Wall <span>//</span> Contact</h2>
+      <p class="section-lede reveal">Have an idea, project, or interesting challenge? Let's build something.</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-links reveal">
+          <a class="contact-links__item panel-cut" href="mailto:yaseenmuhammedatmail@gmail.com">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.3.5 7.2 5.94a.75.75 0 0 0 .96 0L19.7 6H4.3ZM20 7.83l-6.87 5.67a2.75 2.75 0 0 1-3.52 0L4 7.83V18.5c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5V7.83Z"/></svg>
+            <span>
+              <strong>Email</strong>
+              yaseenmuhammedatmail@gmail.com
+            </span>
+          </a>
+          <a class="contact-links__item panel-cut" href="https://github.com/yourusername" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            <span>
+              <strong>GitHub</strong>
+              github.com/yourusername
+            </span>
+          </a>
+          <a class="contact-links__item panel-cut" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            <span>
+              <strong>LinkedIn</strong>
+              linkedin.com/in/yourusername
+            </span>
+          </a>
+          <a class="contact-links__item panel-cut" href="https://www.instagram.com/y4zeen.m/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.87 4.87 0 0 1 1.76 1.15 4.87 4.87 0 0 1 1.15 1.76c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.87 4.87 0 0 1-1.15 1.76 4.87 4.87 0 0 1-1.76 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.87 4.87 0 0 1-1.76-1.15 4.87 4.87 0 0 1-1.15-1.76c-.16-.46-.35-1.26-.4-2.43C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.87 4.87 0 0 1 1.15-1.76A4.87 4.87 0 0 1 5.54.81c.46-.16 1.26-.35 2.43-.4C9.24 2.17 9.62 2.16 12 2.16Zm0 1.8c-3.15 0-3.5.01-4.74.07-.96.04-1.48.2-1.83.34-.46.18-.79.39-1.13.73-.34.34-.55.67-.73 1.13-.14.35-.3.87-.34 1.83-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.96.2 1.48.34 1.83.18.46.39.79.73 1.13.34.34.67.55 1.13.73.35.14.87.3 1.83.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.83-.34.46-.18.79-.39 1.13-.73.34-.34.55-.67.73-1.13.14-.35.3-.87.34-1.83.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.96-.2-1.48-.34-1.83a3.06 3.06 0 0 0-.73-1.13 3.06 3.06 0 0 0-1.13-.73c-.35-.14-.87-.3-1.83-.34-1.24-.06-1.59-.07-4.74-.07Zm0 3.06a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Zm5.2-1.99a1.17 1.17 0 1 1 0 2.34 1.17 1.17 0 0 1 0-2.34Z"/></svg>
+            <span>
+              <strong>Instagram</strong>
+              @y4zeen.m
+            </span>
+          </a>
+          <a class="contact-links__item panel-cut" href="https://instagram.com/yourusername" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.87 4.87 0 0 1 1.76 1.15 4.87 4.87 0 0 1 1.15 1.76c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.87 4.87 0 0 1-1.15 1.76 4.87 4.87 0 0 1-1.76 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.87 4.87 0 0 1-1.76-1.15 4.87 4.87 0 0 1-1.15-1.76c-.16-.46-.35-1.26-.4-2.43C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.87 4.87 0 0 1 1.15-1.76A4.87 4.87 0 0 1 5.54.81c.46-.16 1.26-.35 2.43-.4C9.24 2.17 9.62 2.16 12 2.16Zm0 1.8c-3.15 0-3.5.01-4.74.07-.96.04-1.48.2-1.83.34-.46.18-.79.39-1.13.73-.34.34-.55.67-.73 1.13-.14.35-.3.87-.34 1.83-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.96.2 1.48.34 1.83.18.46.39.79.73 1.13.34.34.67.55 1.13.73.35.14.87.3 1.83.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.83-.34.46-.18.79-.39 1.13-.73.34-.34.55-.67.73-1.13.14-.35.3-.87.34-1.83.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.96-.2-1.48-.34-1.83a3.06 3.06 0 0 0-.73-1.13 3.06 3.06 0 0 0-1.13-.73c-.35-.14-.87-.3-1.83-.34-1.24-.06-1.59-.07-4.74-.07Zm0 3.06a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Zm5.2-1.99a1.17 1.17 0 1 1 0 2.34 1.17 1.17 0 0 1 0-2.34Z"/></svg>
+            <span>
+              <strong>YouTube</strong>
+              yourusername
+            </span>
+          </a>
+        </div>
+
+        <form class="contact-form panel-cut reveal" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+            <span class="form-field__error" id="nameError"></span>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            <span class="form-field__error" id="emailError"></span>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the project or idea..."></textarea>
+            <span class="form-field__error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn--primary form-submit">
+            <span class="form-submit__text">Send Message</span>
+          </button>
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite">
+            Message received — thanks for reaching out. Yaseen will get back to you shortly.
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= -->
+<!-- FOOTER                        -->
+<!-- ============================= -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__line" aria-hidden="true"></div>
+    <div class="footer__row">
+      <div>
+        <p class="footer__name">YASEEN MUHAMMED</p>
+        <p class="footer__tagline">Software Designer • Developer • Technology Enthusiast</p>
+      </div>
+      <p class="footer__copy">© 2026 Yaseen Muhammed</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
